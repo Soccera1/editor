@@ -51,7 +51,6 @@ char getinput(struct tb_event *ev) {
   }
 }
 
-
 void changeline(char input) {
 }
 
