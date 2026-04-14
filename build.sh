@@ -31,7 +31,7 @@ if [ ! -d bin ]; then
 fi
 
 if [ $OS = Darwin ]; then
-  $CC editor.c -o bin/editor -target $ARCH-macos-none -Oz -static || exit 1
+  $CC editor.c -o bin/editor -target $ARCH-macos-none -Oz || exit 1
 elif [ $OS = Linux ]; then
   $CC editor.c -o bin/editor -target $ARCH-linux-musl -Oz -static || exit 1
 else
